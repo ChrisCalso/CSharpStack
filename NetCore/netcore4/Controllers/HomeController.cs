@@ -31,6 +31,7 @@ namespace netcore4.Controllers
                 HttpContext.Session.SetInt32("trial",0);
                 ViewBag.Trial = HttpContext.Session.GetInt32("trial");
                 ViewBag.RandNums = GetRandom();
+                HttpContext.Session.();
             }
             else{
                 int temp = (int) HttpContext.Session.GetInt32("trial");
