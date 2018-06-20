@@ -13,10 +13,9 @@ namespace Wall.Controllers
 {
     public class HomeController : Controller
     {
+        private Temp thisuser;  
         private HomeContext _context;
-        public HomeController(HomeContext context){
-            _context = context;
-        }
+
         [HttpGet]
         [Route("main")]
         public IActionResult Main()
